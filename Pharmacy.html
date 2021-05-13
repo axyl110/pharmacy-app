@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<title>Activity 2</title>
+
+<head>
+  <style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  </style>
+  </head>
+
+
+    <body>
+
+       
+        <h1>Pharmacy</h1>
+       <strong>Brand Name:</strong><input type = 'text' id = "brand">
+       <br>
+       <br>
+       <strong>Generic Name:</strong><input type = 'text' id = "generic">
+       <br>
+       <br>
+       <strong>Stock:</strong><input type = 'text' id = "stock">
+       <br>
+       <br>
+       <strong>Price:</strong><input type = 'text' id = "price">
+       <br>
+       <br>
+
+       <button onclick= "printall(); " style = "width:100px; height:50px;">SUBMIT</button>
+
+       <br><br>
+
+       <table>
+        <tr>
+          <th>Brand Name</th>
+          <th>Generic Name</th>
+          <th>Stock</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+         <td id ="printbrand"></td>
+          <td id="printgeneric"></td>
+          <td id="printstock"></td>
+          <td id="printprice"></td>
+        </tr>
+  
+      </table>
+      
+       
+
+        <script src="pharmacy.js"></script>
+
+    </body>
+
+
+
+</html>
